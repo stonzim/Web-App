@@ -10,12 +10,6 @@
             <asp:Button id="PageChange1" runat="server" OnClick="PageChange_Click1" Text="Default Page"/>
             <br/>
             <br/>
-            <asp:SqlDataSource 
-                id = "SqlDataSource1"
-                runat="server"
-                ConnectionString="connStr"
-                SelectCommand="SELECT StudentName from students WHERE CourseID = 4">
-            </asp:SqlDataSource>
             <asp:GridView
                 id="GridView1"
                 runat="server"
