@@ -21,6 +21,9 @@
                     <asp:BoundField DataField="CourseName" HeaderText="Enrolled Course"/>
                 </Columns>
             </asp:GridView>
+            <asp:Button id="AddButton" runat="server" Text="Add Course" />
+            <asp:Button id="DeleteButton" runat="server" Text="Delete Course" />
+            <asp:Button id="EditButton" runat="server" Text="Edit Course" />
 	</form>
 </body>
 </html>

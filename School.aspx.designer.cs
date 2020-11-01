@@ -18,5 +18,11 @@ namespace WebApp {
 		protected System.Web.UI.WebControls.Button PageChange1;
 		
 		protected System.Web.UI.WebControls.GridView GridView1;
+		
+		protected System.Web.UI.WebControls.Button AddButton;
+		
+		protected System.Web.UI.WebControls.Button DeleteButton;
+		
+		protected System.Web.UI.WebControls.Button EditButton;
 	}
 }
