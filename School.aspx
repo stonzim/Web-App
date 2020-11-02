@@ -24,6 +24,7 @@
             <asp:Button id="AddButton" runat="server" Text="Add Course" OnClick="AddButton_Click" />
             <asp:Button id="DeleteButton" runat="server" Text="Delete Course" />
             <asp:Button id="EditButton" runat="server" Text="Edit Course" />
+            <br/>
             <asp:Label id="AlertLabel" runat="server" />
 	</form>
 </body>
