@@ -20,7 +20,6 @@ namespace WebApp
                 SqlDataReader sqlDataReader = sqlCommand.ExecuteReader();
                 GridView1.DataSource = sqlDataReader;
                 GridView1.DataBind();
-                sqlConnection.Close();
             }
         }
         public void PageChange_Click1(object sender, EventArgs e)
