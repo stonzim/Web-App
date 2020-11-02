@@ -19,10 +19,14 @@ namespace WebApp {
 		
 		protected System.Web.UI.WebControls.GridView GridView1;
 		
+		protected System.Web.UI.WebControls.TextBox CourseTB;
+		
 		protected System.Web.UI.WebControls.Button AddButton;
 		
 		protected System.Web.UI.WebControls.Button DeleteButton;
 		
 		protected System.Web.UI.WebControls.Button EditButton;
+		
+		protected System.Web.UI.WebControls.Label AlertLabel;
 	}
 }

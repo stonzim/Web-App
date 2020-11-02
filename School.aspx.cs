@@ -8,14 +8,12 @@ namespace WebApp
 {
     public partial class School : System.Web.UI.Page
     {
-        SqlConnection sqlConnection = new SqlConnection(ConfigurationManager.ConnectionStrings["myConnectionString"].ConnectionString);
         protected void Page_Load(object sender, EventArgs e)
         {
             string connStr = ConfigurationManager.ConnectionStrings["myConnectionString"].ConnectionString;
             using (SqlConnection sqlConnection = new SqlConnection(connStr))
             {
-                SqlCommand sqlCommand = new SqlCommand("select StudentName, CourseName from students INNER JOIN courses ON " +
-                    "students.CourseID=courses.CourseID;", sqlConnection);
+                SqlCommand sqlCommand = new SqlCommand("SELECT * FROM courses;", sqlConnection);
                 sqlConnection.Open();
                 SqlDataReader sqlDataReader = sqlCommand.ExecuteReader();
                 GridView1.DataSource = sqlDataReader;
@@ -26,8 +24,15 @@ namespace WebApp
         {
             Response.Redirect("Default.aspx");
         }
-        public void Btn1_Click(object sender, EventArgs e)
+        public void AddButton_Click(object sender, EventArgs e)
         {
+            if (!string.IsNullOrEmpty(CourseTB.Text))
+            {
+
+            } else
+            {
+                AlertLabel.Text = "Enter a course";
+            }
         }
     }
 }
